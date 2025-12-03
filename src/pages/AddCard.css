@@ -1,0 +1,78 @@
+.page-wrapper {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 120px 20px;
+}
+
+.page-title {
+  color: #ffffff;
+  font-family: "Marcellus", serif;
+  margin-bottom: 20px;
+  text-shadow: 0 0 8px rgba(200,150,255,0.35);
+}
+
+.form-container {
+  font-family: "Cinzel", serif !important;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(12px);
+  border-radius: 18px;
+  padding: 28px;
+  border: 1px solid rgba(255,255,255,0.2);
+  box-shadow: 0 0 20px rgba(0,0,0,0.25);
+}
+
+/* Input transparan */
+.form-container input,
+.form-container textarea{
+  width: 100%;
+  margin-top: 6px;
+  margin-bottom: 18px;
+  font-family: "Marcellus", serif !important;
+  background: rgba(255,255,255,0.08);
+  border: 1px solid rgba(255,255,255,0.25);
+  border-radius: 10px;
+  padding: 12px;
+  color: #f8eaff;
+
+  backdrop-filter: blur(8px);
+}
+
+/* Warna teks pada select */
+.form-container select {
+  font-family: "Marcellus", serif !important;
+  color: #ffffff !important;     /* ungu lembut */
+  background: rgba(255,255,255,0.08);
+}
+
+/* Warna teks dalam pilihan dropdown */
+.form-container select option {
+  font-family: "Marcellus", serif !important;
+  background-color: #8154a6;      /* ungu gelap */
+  color: #e9d3ff !important;      /* ungu muda */
+}
+
+.submit-btn {
+  display: block;
+  margin: 20px auto 0 auto;   /* tombol jadi center */
+  background: rgba(150, 90, 255, 0.4);
+  border: 1px solid rgba(200,150,255,0.4);
+  font-family: "Marcellus", serif !important;
+  color: #fff;
+  padding: 10px 24px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.25s;
+}
+
+.submit-btn:hover {
+  background: rgba(180,120,255,0.7);
+}
+
+/* Container agar preview & tombol lebih rapi */
+.preview-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 16px;
+}
+

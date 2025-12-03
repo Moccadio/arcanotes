@@ -1,0 +1,73 @@
+.about-container {
+  display: flex;
+  justify-content: center;
+  padding-top: 120px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 150px;
+  padding-bottom: 150px; 
+}
+
+.about-card {
+  max-width: 800px;
+  background: rgba(255,255,255,0.05);
+  backdrop-filter: blur(12px);
+  padding: 40px 32px;
+  border-radius: 20px;
+  border: 1px solid rgba(255,255,255,0.15);
+  color: #e8dfff;
+  text-align: center;
+  
+}
+
+.about-title {
+  font-family: "Cinzel", serif;
+  font-size: 42px;
+  margin-bottom: 10px;
+}
+
+.about-subtitle {
+  font-family: "Marcellus", serif;
+  font-size: 18px;
+  margin-bottom: 40px;
+  opacity: 0.9;
+  line-height: 1.6;
+}
+
+.about-section-title {
+  font-family: "Cinzel", serif;
+  font-size: 26px;
+  margin-top: 40px;
+  margin-bottom: 10px;
+}
+
+.about-text {
+  font-family: "Marcellus", serif;
+  font-size: 17px;
+  line-height: 1.6;
+  opacity: 0.95;
+}
+
+.about-list {
+  list-style: none;
+  padding: 0;
+  margin-top: 15px;
+}
+
+.about-list li {
+  font-family: "Marcellus", serif;
+  margin: 6px 0;
+  font-size: 17px;
+  opacity: 0.9;
+}
+
+.profile-photo {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #510872;
+  box-shadow: 0 6px 15px rgba(150, 56, 130, 0.4);
+  margin-bottom: 1rem;
+  transition: transform 0.3s ease;
+}

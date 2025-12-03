@@ -1,0 +1,178 @@
+.nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  height: 80px;
+  padding: 0;
+  z-index: 100;
+
+  /* tidak pakai padding-top lagi */
+}
+
+/* NAV BOX */
+.nav-box {
+  width: 100%;
+  max-width: 2000px;
+
+  height: 100px;
+  padding: 0 26px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  background: rgba(25, 0, 45, 0.55);
+  backdrop-filter: blur(10px);
+
+  border-radius: 14px;
+  border: 1px solid rgba(200, 170, 255, 0.22);
+
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.25);
+}
+
+/* GRID WRAPPER (LOGO — CENTER — LINKS) */
+.nav-wrapper {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
+
+  width: 100%;
+}
+
+/* LOGO */
+.nav-title {
+  font-family: "Cinzel", serif;
+  font-size: 28px;
+  font-weight: 700;
+  letter-spacing: 2px;
+
+  color: #e8d7ff;
+  text-shadow: 0 0 12px rgba(200, 150, 255, 0.45);
+
+  justify-self: start;
+}
+
+/* NAV LINKS */
+.nav-links {
+  display: flex;
+  font-family: "Cinzel", serif;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  gap: 8px;
+
+  justify-self: start; 
+  align-items: center;
+}
+
+/* BUTTON STYLE */
+.nav-btn {
+  background: transparent;        /* hilangkan background kotak */
+  border: none;                   /* ❤️ hilangkan border */
+  padding: 6px 12px;
+  font-family: "Marcellus", serif;
+  font-size: 20px;
+  color: #f3e9ff;
+  cursor: pointer;
+  transition: 0.25s ease;
+}
+
+.nav-btn:hover {
+  color: #d9c4ff;
+  text-shadow: 0 0 6px rgba(200,160,255,0.5);
+}
+
+.nav-btn svg {
+    display: none;
+  }
+
+@media (max-width: 720px) {
+
+  .nav {
+    top: auto;
+    bottom: 20px; /* naik sedikit supaya melayang */
+    height: 70px;
+  }
+
+  .nav-box {
+    height: 100px;
+    padding: 8px 18px;
+
+    border-radius: 20px;
+    width: 90%;
+    max-width: 500px;
+
+    background: rgba(25, 0, 45, 0.6);
+    border: 1px solid rgba(200,170,255,0.3);
+
+    backdrop-filter: blur(12px);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.4);
+
+    margin: 0 auto; /* supaya betul-betul melayang */
+  }
+
+    .nav-title {
+    display: block;
+    position: absolute;
+    top: -800px;            /* judul muncul di atas navbar */
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 20px;
+    color: #f6e9ff;
+    opacity: 0.9;
+    text-align: center;
+    width: 100%;
+    height: 45px;
+    padding: 8px 18px;
+
+    border-radius: 20px;
+    width: 90%;
+    max-width: 500px;
+
+    background: rgba(25, 0, 45, 0.6);
+    border: 1px solid rgba(200,170,255,0.3);
+
+    backdrop-filter: blur(12px);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.4);
+
+    margin: 0 auto; /* supaya betul-betul melayang */
+  }
+
+  /* navbar tetap di bawah */
+  .nav {
+    bottom: 10px;
+    top: auto;
+  }
+
+
+    .nav-links {
+    width: 100%;
+    justify-content: space-between;
+    padding: 0 18px; /* Tambah jarak kiri-kanan */
+  }
+
+  .nav-btn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0px;
+    margin: 0 8px; /* JARAK ANTAR TOMBOL */
+
+    font-size: 10px;
+    padding: 0;
+
+    color: #f0e4ff;
+  }
+
+  .nav-btn svg {
+    display: flex;
+    width: 22px !important;
+    height: 22px !important;
+  }
+}

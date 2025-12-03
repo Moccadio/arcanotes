@@ -1,0 +1,48 @@
+@media (max-width: 720px) {
+  /* Judul Halaman / Heading besar */
+  h1, .page-title {
+    font-size: 20px !important;
+    line-height: 30px !important;
+  }
+
+
+  /* Paragraf */
+  p {
+    font-size: 15px !important;
+    line-height: 22px !important;
+  }
+
+  /* Tombol utama pada home */
+  .primary-btn, .secondary-btn, .outline-btn {
+    font-size: 14px !important;
+    padding: 10px 14px !important;
+  }
+
+  .nav-box {
+    height: auto;
+    padding: 10px 20px;
+
+    flex-direction: column;
+    gap: 0px;
+  }
+
+  .nav-wrapper {
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+
+  .nav-title {
+    margin-top: 14px;
+    justify-self: center;
+    font-size: 20px;
+  }
+
+  .nav-links {
+    margin-top: px;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+  
+}
+

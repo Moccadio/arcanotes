@@ -1,0 +1,94 @@
+.sim-container {
+  max-width: 900px;
+  margin: auto;
+  padding: 100px 20px;
+}
+
+/* Button seperti katalog */
+.sim-buttons {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  margin-bottom: 25px;
+}
+
+.sim-buttons button {
+  background: rgba(255,255,255,0.10);
+  border: 1px solid rgba(255,255,255,0.3);
+  padding: 10px 18px;
+  border-radius: 10px;
+  color: white;
+  cursor: pointer;
+  transition: .2s;
+  font-family: "Marcellus", serif;
+}
+
+.sim-buttons button:hover {
+  background: rgba(255,255,255,0.25);
+}
+
+/* Grid kartu */
+.sim-card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(130px,1fr));
+  gap: 18px;
+  justify-items: center;
+}
+
+.sim-card img {
+  width: 130px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.45);
+}
+
+.sim-card p {
+  margin-top: 6px;
+  color: #fff;
+  font-family: "Marcellus", serif;
+}
+
+.sim-card:hover { transform: translateY(-3px); }
+
+/* Popup tetap copy dari katalog agar seragam */
+.popup-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.65);
+  backdrop-filter: blur(4px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 5000;
+}
+
+.popup-card {
+  width: 90%;
+  max-width: 420px;
+  max-height: 85vh;
+  overflow-y: auto;
+  background: rgba(255,255,255,0.1);
+  border: 1px solid rgba(255,255,255,0.25);
+  border-radius: 14px;
+  padding: 24px;
+  text-align: center;
+  color: white;
+  animation: fadeIn .25s ease;
+}
+
+.popup-card img { width: 70%; margin-bottom: 12px; }
+.close-btn:hover { background: rgba(255,255,255,0.25); }
+
+@keyframes fadeIn {
+  from { opacity:0; transform:scale(.95); }
+  to   { opacity:1; transform:scale(1); }
+}
+
+/* efek kartu reversed */
+.sim-card.reversed img {
+  transform: rotate(180deg);
+  opacity: 0.9;
+}
+
+.sim-card.reversed:hover img {
+  transform: rotate(180deg) scale(1.05);
+}
