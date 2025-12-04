@@ -75,6 +75,23 @@
   animation: fadeIn .25s ease;
 }
 
+.sim-guide {
+  background: #f4f2ec;
+  padding: 16px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.sim-guide h3 {
+  margin-bottom: 10px;
+}
+
+.sim-guide ul {
+  padding-left: 20px;
+  margin-bottom: 10px;
+}
+
 .popup-card img { width: 70%; margin-bottom: 12px; }
 .close-btn:hover { background: rgba(255,255,255,0.25); }
 
